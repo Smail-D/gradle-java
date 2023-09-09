@@ -28,8 +28,10 @@ jobs:
           GRADLE_PUBLISH_SECRET: ${{ secrets.GRADLE_PUBLISH_SECRET }}
 
       - name: Create Github release
-        uses: marvinpinto/action-automatic-releases@v1.2.1
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          prerelease: false
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
           draft: true
