@@ -17,7 +17,7 @@ gradlePlugin {
     vcsUrl = "https://github.com/Smail-D/gradle-java"
     plugins {
         create("gradle-java") {
-            id = "com.github.smaild.gradle-java"
+            id = "io.github.smaild.gradle-java"
             implementationClass = "com.github.smaild.gradle.GradleJavaPlugin"
             displayName = "Gradle Java plugin"
             description = "This plugin add integration test source set and java toolchain configuration"
