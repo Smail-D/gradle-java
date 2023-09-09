@@ -1,4 +1,4 @@
-package com.github.smaild.gradle;
+package io.github.smaild.gradle;
 
 import org.gradle.api.JavaVersion;
 import org.gradle.api.Project;
