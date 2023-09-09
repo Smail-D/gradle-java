@@ -19,6 +19,7 @@ gradlePlugin {
         create("gradle-java") {
             id = "com.github.smaild.gradle-java"
             implementationClass = "com.github.smaild.gradle.GradleJavaPlugin"
+            displayName = "Gradle Java plugin"
             description = "This plugin add integration test source set and java toolchain configuration"
             version = version
         }
