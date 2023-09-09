@@ -28,7 +28,7 @@ class GradleJavaPluginTest {
     void setUp() {
         // Create a test project and apply the plugin
         project = ProjectBuilder.builder().build();
-        project.getPlugins().apply("com.github.smaild.gradle-java");
+        project.getPlugins().apply("io.github.smaild.gradle-java");
     }
 
     @Test
@@ -54,7 +54,7 @@ class GradleJavaPluginTest {
         var buildScript =
                 """
                 plugins {
-                    id "com.github.smaild.gradle-java"
+                    id "io.github.smaild.gradle-java"
                 }
                 """;
         File buildSrc = new File(tempDir, "build.gradle");
