@@ -13,7 +13,8 @@ dependencies {
 }
 
 gradlePlugin {
-    vcsUrl = "https://github.com/Smail-D/gradle-java.git"
+    website = "https://github.com/Smail-D/gradle-java"
+    vcsUrl = "https://github.com/Smail-D/gradle-java"
     plugins {
         create("gradle-java") {
             id = "com.github.smaild.gradle-java"
