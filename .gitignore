@@ -46,3 +46,6 @@ gradle-app.setting
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
+
+# Ignore Gradle build output directory
+build
